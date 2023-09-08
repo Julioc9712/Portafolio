@@ -87,6 +87,7 @@ body{
     background-size: 216vh;
     background-attachment: fixed;
     background-position: 10%;
+    
     border: transparent 2px solid; 
 }
 .sobremi .text{
@@ -584,6 +585,7 @@ body{
 }
 
 @media screen and (max-width:980px){
+    
     .contenedor-header header{
         padding: 25px;
     }
@@ -643,7 +645,9 @@ body{
         display: block;
     }
     .contenedor-sobremi{
-        background-size: 216vh;
+        background-size: 350%;
+        background-position: 10%;
+        background-repeat: none;
         width: 112.5vh;
     }
   
