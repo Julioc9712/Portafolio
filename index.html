@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+        
+    </head>
+
+    <body>
+    <!--Menu navegación -->
+        <section id="inicio">
+        <div class="contenedor-header ">
+            <header>
+                <div class="logo"><a href="#inicio">JULIOC97</a></div>
+                <nav id="nav">
+                    <ul class="nav">
+                        <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                        <li><a href="#skill" onclick="seleccionar()">Skills</a></li>
+                        <li><a href="#objetivo" onclick="seleccionar()">Objetivos</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    
+                    </ul>
+                </nav>
+                <div class="menu" onclick="mostrarMenu()">
+                    <i class='bx bx-menu' ></i>
+                </div>
+            </header>
+        </div>
+        </section>
+        
+    <!--Inicio-->
+        
+        <section class="contenedor-sobremi" >
+            
+            <div class="sobremi">
+                    <div class="text">
+                        <h1 >HOLA <img src="img/icono.png" alt=""> </h1>
+                        <h2 >Este es mi Portfolio</h2>
+                        <h3 >"&nbsp;<span class="efecto"></span>"</h3>
+                    </div>
+                    <div class="imagen">
+                        <img src="perfil2.jpg" alt="">
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/julioc.mesaruiz" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.linkedin.com/in/julioc-mesa-ru%C3%ADz-490438282/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Julioc9712" target="_blank"><i class='bx bxl-github' ></i></a>
+                        <a href="#contacto"><i class='bx bx-envelope' ></i></a>
+                    </div>
+                
+                
+                <div class="infomi" >
+                    <h2 >Julio César Mesa Ruíz</h2>
+                    <button  ><a download="Curriculum" href="Curriculum.pdf">DESCARGAR-CV <i class='bx bx-download'></i></a>
+                    <span class="overlay"></span></button>
+                    <p>Diseñador Web-Jr con objetivo a ser Full Stack. Experiencias con  <strong>Lenguaje</strong> html, css , javascript, python y <strong >Framework</strong> React, Node.js, Django. Aún no he trabajado en esta rama aunque mi motivación es muy grande en esta profesión </p><br>
+                </div>
+    
+            </div>
+        </section>
+
+    <!--Sobre Mi-->
+        <div id="sobremi"></div>
+        <section >
+            <div class="title-datos">
+                <h2 >Datos personales</h2>
+                <h2 >Gustos personales</h2>
+            </div>
+            <div class="contenido-datosmi">
+                <div class="datos-personales">
+                    <div>
+                        <h3>Cumpleaños <i class='bx bxs-balloon'></i></h3>
+                        <p>29 de diciembre del 1997</p>
+                    </div>
+                    <div>
+                        <h3>Estudios <i class='bx bxs-graduation' ></i></h3>
+                        <p>Licenciado en Cultura Fisica y Deporte </p><br>
+                        <p>Administración de Redes Y Seguridad Informática </p>
+                    </div>        
+                    <div>
+                        <h3>Experiencia <i class='bx bx-briefcase-alt-2'></i></h3>
+                        <p>Cursando estudios </p>
+                    </div>      
+                    <div>
+                        <h3>Correo <i class='bx bxs-envelope' ></i></h3>
+                        <p>juliocmr97@gmail.com </p>
+                    </div> 
+                    <div>
+                        <h3>Nacionalidad <i class='bx bxs-navigation' ></i></h3>
+                        <p>Cuba</p>
+                    </div>
+                    </div>
+                    <div class="gustos-personales">
+                            
+                    <div>
+                        <h2>Viajar <i class="bx bxs-plane-alt"></i></h2>
+                        <img src="img/viajar.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Deporte <i class='bx bx-dumbbell' ></i></h2>
+                        <img src="img/deporte.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Tomar Café <i class='bx bx-coffee' ></i></h2>
+                        <img src="img/cafe.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Tecnología <i class='bx bx-tab'></i></h2>
+                        <img src="img/tecnologia.jpg" alt="">
+                    </div>
+
+                    </div>     
+            </div>
+        </section>
+        
+    <!--Skills-->
+        <div id="skill" ></div>
+        <section class="bg-skill" >
+        <div >
+            <div class="habilidades"><h1>Skills</h1></div>
+            <div class="skill" >
+                
+                <div class="lenguaje">
+                    <h2>Lenguajes</h2>
+                    <p>HTML &nbsp;<i class='bx bxl-html5'></i></p>
+                    <div class="contenedor-skill">
+                        <div class="html">70%</div>
+                    </div>
+                    <p>CSS &nbsp;<i class='bx bxl-css3' style='color:#ffffff' ></i></p>
+                    <div class="contenedor-skill">
+                        <div class="css">50%</div>
+                    </div>
+                    <p>JavaScript &nbsp;<i class='bx bxl-javascript'></i></p>
+                    <div class="contenedor-skill">
+                        <div class="js">50%</div>
+                    </div>
+                    <p>Python &nbsp;<i class='bx bxl-python' style='color:#ffffff' ></i></p>
+                    <div class="contenedor-skill">
+                        <div class="py">60%</div>
+                    </div>
+                    
+                </div>
+                <div class="framework">
+                    <h2>Framework</h2>
+                    <p>React &nbsp;<i class='bx bxl-react' style='color:#ffffff' ></i></p>
+                    <div class="contenedor-skill">
+                        <div class="react">20%</div>
+                    </div>
+                    <p>Node.js &nbsp;<i class='bx bxl-nodejs' style='color:#ffffff' ></i></p>
+                    <div class="contenedor-skill">
+                        <div class="node">20%</div>
+                    </div>
+                    <p>Django &nbsp;<i class='bx bxl-django' style='color:#ffffff' ></i></p>
+                    <div class="contenedor-skill">
+                        <div class="django">50%</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </section>
+    <!--Objetivos-->
+        <div id="objetivo"></div>
+        <section class="futuros-proyecto">
+            
+            <div class="title-proyect" ><h1>Futuros Proyectos</h1></div>
+                <div class="contenido-proyectos" >
+                    
+                    <div class="proyectos">
+                        <h3>PortfolioWeb</h3>
+                        <img src="img/futuro-postfolio.jpg" alt="">
+                        <p>A medida que vaya aprendiendo nuevos framework voy mejorando mi portfolio o creo uno nuevo con el objetivo de mejorar </p>
+                    </div>
+                    <div class="proyectos">
+                        <h3>PelisZone</h3>
+                        <img src="img/netflix.jpg" alt="">
+                        <p>En este proyecto emplearé el conocimiento aprendido con el framework de Frontend-(React) para desarrollar una web de Peliculas y Series </p>
+                    </div>
+                    <div class="proyectos">
+                        <h3>SmartShop</h3>
+                        <img src="img/amazon.webp" alt="">
+                        <p>Mi objetivo es aprender un backend-(Next.js) para desarrollar una tienda virtual con api de registro de usuario y gestion de compra </p>
+                    </div>
+                
+
+                </div>
+        </section>
+    <!--Contacto-->
+        <section>
+        <div id="contacto">
+            <h1>Contactarme</h1>
+        </div>
+        <div class="fila">
+            <form id="form">
+                <div class="field">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" id="name" placeholder="Nombre" required>
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" placeholder="Tu Correo" required>
+                  <label for="mensage">Mensaje</label>
+                  <textarea name="mensaje" id="mensage" cols="30" rows="10" placeholder="Descripcion Mensaje" required></textarea> 
+                  <input type="submit"  id="button" value="Enviar Mensaje" >
+                  </div>
+                </div>
+                                
+              </form>
+              
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+              
+              <script type="text/javascript">
+                emailjs.init('GdpOHjsFsRvdO1iVI')
+              </script>
+            </div>
+            
+        </div>
+        </section>
+    <!--footer-->
+        <section>
+        <footer>
+            <div class="footer">
+                <div>
+                <a href="#inicio"><button><i class='bx bx-chevrons-up'></i></button></a>
+                </div>
+                <div class="redes-footer">
+                    <a href="https://www.facebook.com/julioc.mesaruiz" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.linkedin.com/in/julioc-mesa-ru%C3%ADz-490438282/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Julioc9712" target="_blank"><i class='bx bxl-github' ></i></a>
+                    
+                </div>
+            </div>
+        </footer>
+        </section>
+
+    <!--Scrip JS-->
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('GdpOHjsFsRvdO1iVI')
+        </script>
+        <script src="index.js"></script>
+
+    </body>
+    
+
+</html>

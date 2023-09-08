@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to top,rgb(21, 21, 24),rgba(30,35,40,1.5));
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-header header{
+    background-image: linear-gradient(to right, #1f1f1f 0%, black 100%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 99;
+    
+}
+
+.logo a{
+    font-family: 'Righteous';
+    text-decoration: none;
+    color: #0193b4;
+    font-size: 20px;
+    align-items: center;
+    
+    
+}
+
+.logo a:hover{
+    color: #03c6f1;
+    
+}
+
+.contenedor-header header nav {
+    width: 100%;
+
+}
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+
+.contenedor-header header nav a{
+    margin: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    
+      
+}
+
+.contenedor-header header nav a:hover{
+    color:#0193b4;
+    text-decoration: underline;
+}
+
+
+.contenedor-header .menu {
+    color:white;
+    background-color: #005d72;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+.contenedor-sobremi{
+    background-image:  linear-gradient(to bottom,rgba(30, 35, 38, 0.308),rgba(30, 35, 38, 0.801)),url(img/fondo.jpg);
+    background-size: 216vh;
+    background-attachment: fixed;
+    background-position: 10%;
+    border: transparent 2px solid; 
+}
+.sobremi .text{
+    margin-top: 10rem; 
+}
+.contenedor-sobremi .text h1{
+    width: fit-content;
+    color: white;
+    text-shadow:  cornflowerblue 1px 1px ;
+    margin-left: 10vh;
+    font-size: 40px;
+    
+}
+
+.contenedor-sobremi .text h2{
+    width: fit-content;
+    color: white;
+    margin-left: 15vh;
+    margin-top: 10px;
+    font-size: 30px;
+    text-shadow:  cornflowerblue 1px 1px;
+    z-index: 1;
+}
+.contenedor-sobremi .text h3{
+    width: fit-content;
+    color: white;
+    margin-left: 20vh;
+    margin-top: 15px;
+    text-shadow:  cornflowerblue 1px 1px;
+    font-size: 30px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    
+}  
+
+.imagen img{
+    height: 350px;
+    width: 300px;
+    margin-top: 10vh;
+    border-radius: 40px;
+    border: cornflowerblue 2px solid;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px #64c1ff);  
+    z-index: 1; 
+}
+
+.infomi h2{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    text-shadow:  cornflowerblue 1px 1px;
+    font-size: 32px;
+
+}
+
+.infomi p{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+
+}
+
+.redes {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+.redes a{
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.redes a:hover{
+    color: #03c6f1;
+    
+}
+
+.infomi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+.infomi button a{
+    color: #fff;
+    text-decoration: none;
+}
+.infomi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0193b4;
+    z-index: -1;
+    transition:cubic-bezier(.54,.1,.57,.81) 1s ;
+}
+.infomi button:hover .overlay{
+    width: 100%;
+}
+
+.title-datos{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin:  12vh auto 10vh auto;
+    text-shadow:  #0193b4 2px 1px;
+    font-size:45px;
+  
+}
+
+
+.contenido-datosmi{
+    display: flex;
+    justify-content: center;
+    
+}
+.datos-personales{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    
+    
+}
+.datos-personales h3{
+    margin: 20px ;
+    margin-left: 40px;
+    color: #0193b4;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+    
+}
+
+.datos-personales p{
+    color: white;
+    margin-left: 40px;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.gustos-personales{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.gustos-personales h2{
+    color: #0193b4;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.gustos-personales img{
+    width: 200px;
+    height: 200px;
+    margin: 10px ;
+    border-radius: 10%;
+    transition: .3s;
+    
+}
+
+
+.habilidades{
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    font-size:45px;
+    text-shadow:  #0193b4 2px 1px;
+}
+
+.habilidades h1{
+    margin-bottom: 50px;
+}
+.skill{
+    width: 50%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:center;
+    gap: 10vh;
+    
+}
+
+.skill h2{
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    margin-top: 20px;
+}
+
+.skill p{
+    margin: 10px;
+    color: white ;
+    font-size: 20px;
+    transition: .2s;
+    
+}
+
+.skill p i{
+    font-size: 35px;
+    transition: .2s;
+    
+    
+}
+.contenedor-skill{
+    width: 50vh;
+    background-color: #ddd;
+    border-radius: 20px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    
+}
+
+
+.html{
+    background-color: #005d72;
+    animation: fillhtml 2s forwards;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+.css{
+    background-color: #005d72;
+    animation: fillcss 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+.js{
+    background-color: #005d72;
+    animation: filljs 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes filljs{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+.py{
+    background-color: #005d72;
+    animation: fillpy 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes fillpy{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+
+.bash{
+    background-color: #005d72;
+    animation: fillbash 2s forwards;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+@keyframes fillbash{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+.react{
+    background-color: #0193b4;
+    animation: fillreact 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes fillreact{
+    0%{width: 0;}
+    100%{width: 20%;}
+}
+.node{
+    background-color: #0193b4;
+    animation: fillnode 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes fillnode{
+    0%{width: 0;}
+    100%{width: 20%;}
+}
+.django{
+    background-color: #0193b4;
+    animation: filldjango 2s forwards;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@keyframes filldjango{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+
+.title-proyect{
+    margin-bottom: 100px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    font-size:45px;
+    text-shadow:  #0193b4 2px 1px;
+    
+    
+}
+
+.contenido-proyectos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.proyectos h3{
+    margin-left:50px ;
+    margin-bottom: 20px;
+    color: #0193b4;
+    font-size: 32px;
+}
+.proyectos img{
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 5%; 
+}
+
+.proyectos p{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 24px;
+    color: white;
+    width: 300px;
+    height: 130px;
+    font-size: 18px;
+    transition:.3s;
+    background-color: #303030;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+#contacto{
+    margin-bottom: 50px;
+    margin-top: 20rem;
+    text-align: center;
+    color: white;
+    font-size:45px;
+    text-shadow:  #0193b4 2px 2px;
+    
+}
+
+.fila{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.field{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.field label{
+    color: white;
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 20px;
+    
+}
+
+.field input,.field textarea{
+    width: 80vh;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #303030;
+    color: #ccc;
+    
+}
+
+#button{
+    cursor: pointer;
+    background-color: transparent;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+#button:hover{
+    background-color: #0193b4;
+    
+}
+
+.footer{
+    
+    background-image: linear-gradient(to right, #0e0e0e 0%, black 100%);
+    margin-top: 50px;
+    padding: 15px;
+    position:unset;
+    
+    
+}
+
+.redes-footer a{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.redes-footer a i{
+    font-size: 30px;
+    
+    
+}
+
+.redes-footer a:hover{
+    color: #0193b4;
+}
+
+.footer button{
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    font-size: 30px;
+    border: transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    
+}
+.footer button:hover{
+    background-color: #0193b4;
+}
+
+@media screen and (max-width:980px){
+    .contenedor-header header{
+        padding: 25px;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    .contenedor-header .menu{
+        display: block;
+        cursor: pointer;
+        
+        
+    }
+    .contenedor-header .menu i{
+        border: #005d72 2px solid ;
+        position: absolute;
+        right: 0;
+        top:15px;
+        font-size: 40px;
+        height: 50px;
+        color: white;
+        margin-right: 20px;
+        border-radius: 5px;
+        
+    }
+    .contenedor-header header nav{
+        width: 300px;
+        padding: 20px;
+        
+    }
+    .contenedor-header header nav ul li{
+        margin: 40px auto;
+        margin-top: 4rem;
+    }
+    .contenedor-header header nav ul li a{
+        font-size: 20px;
+        
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        background-image: linear-gradient(to top, #1d1d1d 0%, black 100%);
+        height: 4000px;
+        width: 50%;
+        border-radius: 10px;
+        text-align: right;
+        
+
+        
+        
+    }
+    nav.responsive ul {
+        display: block;
+    }
+    .contenedor-sobremi{
+        background-size: 216vh;
+        width: 112.5vh;
+    }
+  
+    .title-datos{
+        font-size:28px;
+        width: 112vh;
+    }
+    
+    .contenido-datosmi{
+        width: 112vh;
+        justify-content: center;
+    }
+    .habilidades{
+        width: 112vh;
+        
+    }
+    .skill{
+        width: 112vh;
+        gap: 15px;
+    }
+    .title-proyect{
+        width: 112vh;
+    }
+    .contenido-proyectos{
+        display: flex;
+        justify-content: center;
+        width: 112vh;
+        
+    }
+    .proyectos h3{
+        margin-top: 5rem;
+    }
+    .proyectos img{
+        width: 500px;
+        height: 500px;  
+    }
+    .proyectos p{
+        height: 120px;
+        width: 450px;
+    }
+    #contacto{
+        width: 112vh;
+    }
+    .fila{
+        width: 112vh;
+    }
+    .footer{
+        padding: 15px;
+        width: 112.5vh;
+    }   
+}
