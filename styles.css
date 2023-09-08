@@ -643,7 +643,9 @@ body{
         display: block;
     }
     .contenedor-sobremi{
-        background-size: 216vh;
+        background-size: 350%;
+        background-position: 10%;
+        background-repeat: none;
         width: 112.5vh;
     }
   
