@@ -572,7 +572,7 @@ body{
 .footer button{
     cursor: pointer;
     float: right;
-    margin-right: 20px;
+    margin-right: 30px;
     font-size: 30px;
     border: transparent;
     border-radius: 50%;
@@ -695,7 +695,7 @@ body{
         width: 112vh;
     }
     .footer{
-        padding: 15px;
+        padding: 20px;
         width: 112.5vh;
     }   
 }
