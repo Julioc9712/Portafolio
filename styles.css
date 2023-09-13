@@ -88,9 +88,9 @@ body {
 .contenedor-sobremi {
     background-image: linear-gradient(to bottom, rgba(30, 35, 38, 0.308), rgba(30, 35, 38, 0.801)), url(img/fondo.jpg);
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment:local;
     background-position: 10%;
-    border: transparent 2px solid;
+    border: transparent 0.001px solid;
 }
 
 .sobremi .text {
@@ -489,7 +489,7 @@ body {
 
 
 .title-proyect {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top: 20vh;
     text-align: center;
     color: white;
@@ -663,7 +663,10 @@ body {
 }
 
 @media screen and (max-width:980px) {
-
+    .contenedor-sobremi{
+    background-size: 240%;
+    background-position: 20%;
+    }
     .contenedor-header header {
         padding: 25px;
     }
@@ -850,9 +853,9 @@ nav.responsive ul {
 @media screen and (max-width:720px) {
 
     .contenedor-sobremi {
-        background-size: 200%;
-        background-attachment: fixed;
-        background-position: 10%;
+        background-size: 240%;
+        
+        background-position: 20%;
     }
 
     .gustos-personales img {
@@ -879,16 +882,16 @@ nav.responsive ul {
 
     .contenedor-sobremi .text h1 {
         font-size: 30px;
-        margin-left: 5vh;
+        margin-left: 4vh;
     }
 
     .contenedor-sobremi .text h2 {
-        font-size: 20px;
-        margin-left: 10vh;
+        font-size: 22px;
+        margin-left: 5vh;
     }
 
     .contenedor-sobremi .text h3 {
-        margin-left: 13vh;
+        margin-left: 6vh;
         font-size: 20px;
     }
 
@@ -904,8 +907,8 @@ nav.responsive ul {
     }
 
     .infomi p {
-        width: 85%;
-        font-size: 18px;
+        width: 90%;
+        font-size: 16px;
     }
 
 
