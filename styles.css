@@ -134,6 +134,7 @@ body {
 .imagen img {
     height: 350px;
     width: 300px;
+    image-resolution: 100%;
     margin-top: 10vh;
     border-radius: 40px;
     border: cornflowerblue 2px solid;
