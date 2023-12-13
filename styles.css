@@ -89,7 +89,7 @@ body {
     background-image: linear-gradient(to bottom, rgba(30, 35, 38, 0.308), rgba(30, 35, 38, 0.801)), url(img/fondo.jpg);
     background-size: 100%;
     background-attachment:local;
-    background-position: 10%;
+    background-position: 20%;
     border: transparent 0.001px solid;
 }
 
